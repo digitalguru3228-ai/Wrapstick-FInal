@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wrapstick — Gourmet Wraps & Street Eats | Kanodar, Gujarat</title>
+<meta name="description" content="Wrapstick in Kanodar, Gujarat — Premium wraps, rolls, and street-style food. Open daily 12:30 PM to 11:30 PM at Al Qama Hotel, Hussain Tekri Rd." />
+<meta name="keywords" content="Wrapstick, wraps Kanodar, street food Gujarat, rolls Kanodar, fast food Palanpur" />
+<meta property="og:title" content="Wrapstick — Gourmet Wraps, Rolled to Perfection" />
+<meta property="og:description" content="Premium wraps & street eats in Kanodar, Gujarat. Open daily 12:30 PM – 11:30 PM." />
+<meta property="og:type" content="restaurant" />
+<link rel="canonical" href="https://wrapstick.in/" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { DEFAULT: '#FF4B1F', light: '#FF6B4A', dark: '#CC3A18' },
+          ink: { DEFAULT: '#0D0D0D', 2: '#161616', 3: '#1E1E1E', 4: '#2A2A2A', 5: '#3A3A3A' },
+          cream: { DEFAULT: '#F5F0E8', 2: '#EDE7D9' },
+          gold: '#D4A843',
+        },
+        fontFamily: {
+          display: ['"Bebas Neue"', 'cursive'],
+          serif: ['"DM Serif Display"', 'serif'],
+          body: ['"DM Sans"', 'sans-serif'],
+        },
+        backgroundImage: {
+          'noise': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E\")",
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: #0D0D0D; color: #F5F0E8; overflow-x: hidden; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #0D0D0D; }
+  ::-webkit-scrollbar-thumb { background: #FF4B1F; border-radius: 2px; }
+
+  /* ── LOGO ── */
+  .logo-text { font-family: 'Bebas Neue', cursive; letter-spacing: 0.08em; }
+
+  /* ── NAV ── */
+  #navbar { transition: background 0.3s, box-shadow 0.3s; }
+  #navbar.scrolled { background: rgba(13,13,13,0.95); backdrop-filter: blur(16px); box-shadow: 0 1px 0 rgba(255,75,31,0.15); }
+  .nav-link { position: relative; font-weight: 500; letter-spacing: 0.04em; font-size: 0.875rem; text-transform: uppercase; transition: color 0.2s; }
+  .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:#FF4B1F; transition:width 0.25s; }
+  .nav-link:hover { color: #FF4B1F; }
+  .nav-link:hover::after { width: 100%; }
+
+  /* ── HERO ── */
+  #hero { min-height: 100svh; position: relative; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #0D0D0D 0%, #1a0a05 60%, #0D0D0D 100%); }
+  .hero-glow { position: absolute; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(255,75,31,0.18) 0%, transparent 70%); top: -200px; right: -200px; pointer-events: none; }
+  .hero-glow-2 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(212,168,67,0.10) 0%, transparent 70%); bottom: 0; left: -100px; pointer-events: none; }
+
+  .headline { font-family: 'Bebas Neue', cursive; line-height: 0.92; letter-spacing: 0.02em; }
+  .headline .accent { color: #FF4B1F; }
+  .headline .serif-word { font-family: 'DM Serif Display', serif; font-style: italic; color: #D4A843; }
+
+  .btn-primary { background: #FF4B1F; color: #fff; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.8rem; padding: 0.85rem 2rem; border-radius: 3px; transition: background 0.2s, transform 0.15s, box-shadow 0.2s; box-shadow: 0 4px 24px rgba(255,75,31,0.35); border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .btn-primary:hover { background: #FF6B4A; transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,75,31,0.5); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .btn-outline { background: transparent; color: #F5F0E8; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.8rem; padding: 0.83rem 2rem; border-radius: 3px; border: 1.5px solid rgba(245,240,232,0.3); transition: border-color 0.2s, color 0.2s, transform 0.15s; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .btn-outline:hover { border-color: #FF4B1F; color: #FF4B1F; transform: translateY(-2px); }
+
+  /* ── BADGE / TAG ── */
+  .veg-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+  .veg-dot.veg { background: #22c55e; box-shadow: 0 0 6px rgba(34,197,94,0.6); }
+  .veg-dot.non-veg { background: #ef4444; box-shadow: 0 0 6px rgba(239,68,68,0.6); }
+
+  /* ── MENU TABS ── */
+  .tab-btn { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.5rem 1.2rem; border-radius: 2px; border: 1.5px solid transparent; transition: all 0.2s; cursor: pointer; background: transparent; color: rgba(245,240,232,0.5); }
+  .tab-btn.active, .tab-btn:hover { background: #FF4B1F; color: #fff; border-color: #FF4B1F; }
+  .tab-btn.active { box-shadow: 0 0 20px rgba(255,75,31,0.4); }
+
+  /* ── MENU CARD ── */
+  .menu-card { background: #161616; border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; overflow: hidden; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s; }
+  .menu-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,0.6); border-color: rgba(255,75,31,0.25); }
+  .menu-card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: transform 0.4s; display: block; }
+  .menu-card:hover img { transform: scale(1.05); }
+
+  .add-btn { background: #FF4B1F; color: #fff; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; border: none; border-radius: 3px; padding: 0.55rem 1rem; cursor: pointer; transition: background 0.2s, transform 0.15s; width: 100%; }
+  .add-btn:hover { background: #FF6B4A; transform: scale(1.03); }
+  .add-btn:active { transform: scale(0.97); }
+
+  /* ── CART DRAWER ── */
+  #cart-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); z-index: 9998; opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+  #cart-overlay.open { opacity: 1; pointer-events: all; }
+  #cart-drawer { position: fixed; right: 0; top: 0; height: 100%; width: min(400px, 100vw); background: #161616; z-index: 9999; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); display: flex; flex-direction: column; border-left: 1px solid rgba(255,75,31,0.2); }
+  #cart-drawer.open { transform: translateX(0); }
+
+  .cart-item-row { display: flex; gap: 0.75rem; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .qty-btn { background: #2A2A2A; border: 1px solid rgba(255,255,255,0.1); color: #F5F0E8; width: 26px; height: 26px; border-radius: 4px; font-size: 1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; }
+  .qty-btn:hover { background: #FF4B1F; }
+  .remove-btn { background: transparent; border: none; color: rgba(245,240,232,0.3); cursor: pointer; transition: color 0.2s; flex-shrink: 0; font-size: 1.1rem; line-height: 1; }
+  .remove-btn:hover { color: #ef4444; }
+
+  /* ── FEATURE CARD ── */
+  .feature-card { background: linear-gradient(135deg, #161616 0%, #1a1a1a 100%); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 2rem 1.5rem; transition: border-color 0.3s, transform 0.3s; }
+  .feature-card:hover { border-color: rgba(255,75,31,0.3); transform: translateY(-4px); }
+  .feature-icon { width: 52px; height: 52px; background: rgba(255,75,31,0.12); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.2rem; }
+
+  /* ── SECTION LABELS ── */
+  .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #FF4B1F; margin-bottom: 0.5rem; }
+  .section-title { font-family: 'Bebas Neue', cursive; letter-spacing: 0.04em; line-height: 1; }
+
+  /* ── ABOUT ── */
+  .hours-badge { background: rgba(255,75,31,0.1); border: 1px solid rgba(255,75,31,0.25); border-radius: 6px; padding: 0.75rem 1.25rem; display: flex; align-items: center; gap: 0.75rem; }
+
+  /* ── FOOTER ── */
+  footer { background: #0a0a0a; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer-link { color: rgba(245,240,232,0.45); font-size: 0.875rem; transition: color 0.2s; }
+  .footer-link:hover { color: #FF4B1F; }
+  .social-btn { width: 38px; height: 38px; border-radius: 6px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); display: inline-flex; align-items: center; justify-content: center; transition: background 0.2s, border-color 0.2s; color: rgba(245,240,232,0.6); }
+  .social-btn:hover { background: rgba(255,75,31,0.15); border-color: rgba(255,75,31,0.4); color: #FF4B1F; }
+
+  /* ── MOBILE MENU ── */
+  #mobile-menu { position: fixed; inset: 0; background: #0D0D0D; z-index: 9000; transform: translateX(-100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); display: flex; flex-direction: column; padding: 2rem; }
+  #mobile-menu.open { transform: translateX(0); }
+  .mobile-nav-link { font-family: 'Bebas Neue', cursive; font-size: 3rem; letter-spacing: 0.04em; color: rgba(245,240,232,0.6); transition: color 0.2s; line-height: 1.2; }
+  .mobile-nav-link:hover { color: #FF4B1F; }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeInUp { from { opacity:0; transform: translateY(28px); } to { opacity:1; transform: translateY(0); } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes slideRight { from { transform: translateX(-32px); opacity:0; } to { transform: translateX(0); opacity:1; } }
+  @keyframes pulse-dot { 0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); } 50% { box-shadow: 0 0 0 6px rgba(34,197,94,0); } }
+
+  .anim-1 { animation: fadeInUp 0.7s ease both; }
+  .anim-2 { animation: fadeInUp 0.7s 0.12s ease both; }
+  .anim-3 { animation: fadeInUp 0.7s 0.24s ease both; }
+  .anim-4 { animation: fadeInUp 0.7s 0.36s ease both; }
+  .anim-fade { animation: fadeIn 1s ease both; }
+
+  /* ── DIVIDER ── */
+  .gradient-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,75,31,0.4), transparent); }
+
+  /* ── CART BADGE ── */
+  #cart-count { display: none; }
+  #cart-count.has-items { display: flex; }
+
+  /* ── MENU FILTER ── */
+  .menu-item { transition: opacity 0.3s, transform 0.3s; }
+  .menu-item.hidden { display: none; }
+
+  /* ── WHATSAPP BTN ── */
+  .wa-btn { background: #25D366; color: #fff; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.8rem; border: none; border-radius: 3px; padding: 0.9rem; cursor: pointer; width: 100%; transition: background 0.2s; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+  .wa-btn:hover { background: #1ebe5d; }
+
+  /* ── MAP iframe ── */
+  .map-wrap { border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); }
+
+  /* ── NOISE OVERLAY ── */
+  .noise-overlay { pointer-events: none; position: absolute; inset: 0; opacity: 0.03; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-repeat: repeat; background-size: 128px 128px; }
+
+  /* schema for SEO */
+</style>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Wrapstick",
+  "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=1200",
+  "url": "https://wrapstick.in",
+  "telephone": "+918460480045",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Al Qama Hotel, Hussain Tekri Rd, Tharadra Nagar",
+    "addressLocality": "Kanodar",
+    "addressRegion": "Gujarat",
+    "postalCode": "385520",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 24.0247, "longitude": 72.4144 },
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:30", "closes": "23:30" }],
+  "servesCuisine": ["Wraps","Street Food","Fast Casual"],
+  "priceRange": "₹₹",
+  "menu": "https://wrapstick.in/#menu"
+}
+</script>
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+
+      <!-- Logo -->
+      <a href="#hero" class="flex items-center gap-2 group">
+        <span class="text-brand text-2xl" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="14" cy="14" rx="13" ry="7" stroke="#FF4B1F" stroke-width="2" fill="none"/>
+            <path d="M4 14 Q14 8 24 14" stroke="#D4A843" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M4 14 Q14 20 24 14" stroke="#FF4B1F" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text text-cream text-2xl tracking-widest group-hover:text-brand transition-colors duration-200">WRAPSTICK</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#hero" class="nav-link text-cream">Home</a>
+        <a href="#menu" class="nav-link text-cream">Menu</a>
+        <a href="#about" class="nav-link text-cream">About</a>
+        <a href="#contact" class="nav-link text-cream">Contact</a>
+      </div>
+
+      <!-- Desktop Right Actions -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="tel:+918460480045" class="btn-outline text-xs py-2 px-4">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.38 2 2 0 0 1 3.55 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 84604 80045
+        </a>
+        <!-- Cart Button -->
+        <button onclick="toggleCart()" class="relative btn-primary py-2 px-4 text-xs" aria-label="Open cart">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Cart
+          <span id="cart-count" class="absolute -top-2 -right-2 bg-gold text-ink text-xs font-black w-5 h-5 rounded-full items-center justify-center text-[10px]">0</span>
+        </button>
+      </div>
+
+      <!-- Mobile: Cart + Hamburger -->
+      <div class="flex lg:hidden items-center gap-3">
+        <button onclick="toggleCart()" class="relative p-2 text-cream" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span id="cart-count-mob" class="hidden absolute -top-1 -right-1 bg-brand text-white text-[10px] font-black w-4 h-4 rounded-full items-center justify-center">0</span>
+        </button>
+        <button id="hamburger" onclick="toggleMobileMenu()" class="p-2 text-cream" aria-label="Menu">
+          <svg id="ham-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════
+     MOBILE MENU OVERLAY
+════════════════════════════════════════════════ -->
+<div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <div class="flex items-center justify-between mb-12">
+    <span class="logo-text text-cream text-2xl tracking-widest">WRAPSTICK</span>
+    <button onclick="toggleMobileMenu()" class="text-cream" aria-label="Close menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="flex flex-col gap-2">
+    <a href="#hero"    class="mobile-nav-link" onclick="toggleMobileMenu()">Home</a>
+    <a href="#menu"    class="mobile-nav-link" onclick="toggleMobileMenu()">Menu</a>
+    <a href="#about"   class="mobile-nav-link" onclick="toggleMobileMenu()">About</a>
+    <a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu()">Contact</a>
+  </nav>
+  <div class="mt-auto pt-8 border-t border-white/10">
+    <a href="tel:+918460480045" class="btn-primary text-sm w-full justify-center mb-3 block text-center">
+      Call to Order: +91 84604 80045
+    </a>
+    <p class="text-center text-cream/30 text-xs mt-4">Open Every Day · 12:30 PM – 11:30 PM</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════════════ -->
+<section id="hero" class="relative flex items-center min-h-screen pt-16">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Decorative stripe -->
+  <div class="absolute left-0 top-0 bottom-0 w-1 bg-brand opacity-60 hidden lg:block"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-0">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+
+      <!-- Text Block -->
+      <div>
+        <p class="section-label anim-1">Kanodar's Premium Street Eats</p>
+        <h1 class="headline text-[clamp(4rem,12vw,8rem)] text-cream mb-4 anim-2">
+          GOURMET<br>
+          <span class="serif-word">Wraps.</span><br>
+          <span class="accent">BOLD</span> FLAVORS.
+        </h1>
+        <p class="text-cream/60 text-base lg:text-lg max-w-md leading-relaxed mb-8 anim-3">
+          Rolled to perfection with fresh, hygienic ingredients, house-secret sauces, and street-style soul — served hot every day from 12:30 PM.
+        </p>
+        <div class="flex flex-wrap gap-3 anim-4">
+          <a href="#menu" class="btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Explore Menu
+          </a>
+          <a href="tel:+918460480045" class="btn-outline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.38 2 2 0 0 1 3.55 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Order Now
+          </a>
+        </div>
+
+        <!-- Stats strip -->
+        <div class="flex gap-8 mt-12 anim-fade">
+          <div>
+            <p class="section-title text-4xl text-brand">50+</p>
+            <p class="text-cream/40 text-xs uppercase tracking-widest mt-0.5">Menu Items</p>
+          </div>
+          <div class="w-px bg-white/10"></div>
+          <div>
+            <p class="section-title text-4xl text-brand">100%</p>
+            <p class="text-cream/40 text-xs uppercase tracking-widest mt-0.5">Fresh Daily</p>
+          </div>
+          <div class="w-px bg-white/10"></div>
+          <div>
+            <p class="section-title text-4xl text-brand">11H</p>
+            <p class="text-cream/40 text-xs uppercase tracking-widest mt-0.5">Open Daily</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="relative anim-fade hidden lg:block">
+        <div class="absolute -inset-4 rounded-2xl bg-brand/10 blur-2xl"></div>
+        <div class="relative rounded-2xl overflow-hidden border border-white/10" style="aspect-ratio:4/5;">
+          <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=900&auto=format&fit=crop&q=80"
+               alt="Wrapstick signature wrap — gourmet street food Kanodar Gujarat"
+               class="w-full h-full object-cover"
+               loading="eager" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <!-- Floating tag -->
+          <div class="absolute bottom-6 left-6 right-6 bg-black/60 backdrop-blur-md rounded-lg p-4 border border-white/10">
+            <p class="text-gold text-xs font-bold uppercase tracking-widest mb-1">Today's Special</p>
+            <p class="text-cream font-semibold">Peri-Peri Paneer Wrap</p>
+            <p class="text-cream/50 text-xs mt-0.5">Grilled paneer · Smoky peri-peri sauce · Crunchy slaw</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+    <span class="text-cream text-xs uppercase tracking-widest">Scroll</span>
+    <div class="w-px h-10 bg-cream/40 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full bg-brand" style="height:40%;animation:slideDown 1.5s ease-in-out infinite;"></div>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes slideDown { 0%{top:-40%} 100%{top:140%} }
+</style>
+
+<!-- ════════════════════════════════════════════════
+     FEATURES / USP SECTION
+════════════════════════════════════════════════ -->
+<section id="features" class="py-20 lg:py-28 relative">
+  <div class="gradient-divider mb-20"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <p class="section-label">Why Choose Us</p>
+      <h2 class="section-title text-[clamp(2.5rem,6vw,4.5rem)] text-cream">THE <span style="color:#FF4B1F">WRAPSTICK</span> PROMISE</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <!-- Card 1 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <h3 class="text-cream font-bold text-base mb-2">Fresh Ingredients</h3>
+        <p class="text-cream/45 text-sm leading-relaxed">Sourced daily from local markets. Every wrap is assembled fresh-to-order, never pre-made or reheated.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+        </div>
+        <h3 class="text-cream font-bold text-base mb-2">Signature Sauces</h3>
+        <p class="text-cream/45 text-sm leading-relaxed">House-crafted secret-recipe sauces — from smoky peri-peri to tangy mint mayo — that you won't find anywhere else.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3 class="text-cream font-bold text-base mb-2">Fast & Hot</h3>
+        <p class="text-cream/45 text-sm leading-relaxed">Your order arrives hot, wrapped tight, and ready to devour. We're built for speed without sacrificing quality.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="text-cream font-bold text-base mb-2">Hygienically Prepared</h3>
+        <p class="text-cream/45 text-sm leading-relaxed">Prepared in a clean, FSSAI-compliant kitchen. Clean hands, clean surfaces, clean conscience — every single order.</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="gradient-divider mt-20"></div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     MENU SECTION
+════════════════════════════════════════════════ -->
+<section id="menu" class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-14">
+      <p class="section-label">Our Offerings</p>
+      <h2 class="section-title text-[clamp(2.5rem,6vw,4.5rem)] text-cream">WHAT'S <span style="color:#FF4B1F">ROLLING</span></h2>
+      <p class="text-cream/40 mt-3 text-sm max-w-xl mx-auto">Every item crafted with intention. Pick your flavour, own your meal.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="flex flex-wrap gap-2 justify-center mb-10" id="filter-tabs">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="signature">Signature Wraps</button>
+      <button class="tab-btn" data-filter="sides">Loaded Sides</button>
+      <button class="tab-btn" data-filter="drinks">Refreshing Drinks</button>
+    </div>
+
+    <!-- Menu Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="menu-grid">
+
+      <!-- ── WRAP 1 ── -->
+      <div class="menu-card" data-category="signature">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&auto=format&fit=crop&q=80"
+               alt="Peri-Peri Paneer Wrap"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot veg"></span>
+            <span class="text-green-400 text-xs font-semibold uppercase tracking-wider">Veg</span>
+            <span class="ml-auto text-xs text-gold font-semibold bg-gold/10 px-2 py-0.5 rounded">Bestseller</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Twister Paneer Wrap</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Smoky grilled paneer, house peri-peri sauce, crispy iceberg, red onions & cheddar in a toasted tortilla.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹90</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Twister Paneer Wrap" data-price="90">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── WRAP 2 ── -->
+      <div class="menu-card" data-category="signature">
+        <div class="overflow-hidden">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHEB570_MWIobFQm57sy4yQ_mEXJ8cHP-_ZA&s"
+               alt="Chicken Tikka Roll"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot non-veg"></span>
+            <span class="text-red-400 text-xs font-semibold uppercase tracking-wider">Non-Veg</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Submarine Wrap</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Tender tandoori chicken tikka, zesty mint chutney, pickled red onions & crunchy veggies rolled in a flaky paratha.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹130</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Submarine Wrap" data-price="130">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── WRAP 3 ── -->
+      <div class="menu-card" data-category="signature">
+        <div class="overflow-hidden">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsPC98LuFMw02VSITYzFsqQeM1swmYcWpbkA&s"
+               alt="Loaded Veggie Wrap"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot veg"></span>
+            <span class="text-green-400 text-xs font-semibold uppercase tracking-wider">Veg</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Tangy Wrap</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Avocado hummus, roasted peppers, sweet corn, jalapeños, crispy tortilla strips & tangy salsa verde.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹110</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Tangy Wrap" data-price="110">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── WRAP 4 ── -->
+      <div class="menu-card" data-category="signature">
+        <div class="overflow-hidden">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXxpkiSBSgxX_7Jg7vtAykkX96DWIYOiOJCw&s"
+               alt="Smoky BBQ Chicken Wrap"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot non-veg"></span>
+            <span class="text-red-400 text-xs font-semibold uppercase tracking-wider">Non-Veg</span>
+            <span class="ml-auto text-xs text-gold font-semibold bg-gold/10 px-2 py-0.5 rounded">Spicy 🔥</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Chicken Shawarma</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Flame-grilled chicken strips, house BBQ sauce, caramelised onions, cheddar melt & coleslaw in a wheat wrap.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹160</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Chicken Shawarma" data-price="160">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SIDE 1 ── -->
+      <div class="menu-card" data-category="sides">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=80"
+               alt="Masala Fries"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot veg"></span>
+            <span class="text-green-400 text-xs font-semibold uppercase tracking-wider">Veg</span>
+            <span class="ml-auto text-xs text-gold font-semibold bg-gold/10 px-2 py-0.5 rounded">Popular</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Wrapstick Masala Fries</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Thick-cut golden fries tossed with our house masala blend, topped with green chutney and a kick of chilli flakes.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹80</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Wrapstick Masala Fries" data-price="80">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SIDE 2 ── -->
+      <div class="menu-card" data-category="sides">
+        <div class="overflow-hidden">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/075/232/182/small/pepperoni-mushrooms-cherry-tomatoes-and-basil-square-crust-pizza-photo.jpg"
+               alt="Cheese Squares Pizza"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot veg"></span>
+            <span class="text-green-400 text-xs font-semibold uppercase tracking-wider">Veg</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Cheese Square Pizza</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Crispy corn chips layered with salsa roja, jalapeños, sour cream, guacamole & melted cheese sauce. Glorious.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹200</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Cheese Square Pizza" data-price="200">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── SIDE 3 ── -->
+      <div class="menu-card" data-category="sides">
+        <div class="overflow-hidden">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/047/197/008/small/chicken-popcorn-close-up-in-slate-dish-free-photo.jpeg"
+               alt="Crispy Chicken Pops"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot non-veg"></span>
+            <span class="text-red-400 text-xs font-semibold uppercase tracking-wider">Non-Veg</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Crispy Chicken Pops</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Juicy chicken bites in a light seasoned crumb, fried to perfection. Served with Wrapstick's signature dip sauce.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹160</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Crispy Chicken Pops" data-price="160">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── DRINK 1 ── -->
+      <div class="menu-card" data-category="drinks">
+        <div class="overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=600&auto=format&fit=crop&q=80"
+               alt="Frosty mango drink with mint and lime"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot veg"></span>
+            <span class="text-green-400 text-xs font-semibold uppercase tracking-wider">Veg</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Frosty Mango Shake</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Real Alphonso mango blended with lychee syrup, a hint of rose water, fresh mint, and crushed ice. Summer in a glass.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹110</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Frosty Mango Shake" data-price="110">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── DRINK 2 ── -->
+      <div class="menu-card" data-category="drinks">
+        <div class="overflow-hidden">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjH_OSojhHYjVXDKfYzzfzhGM6zlHdcTF6EQ&ss"
+               alt="Frosty Choco Shake"
+               loading="lazy" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="veg-dot veg"></span>
+            <span class="text-green-400 text-xs font-semibold uppercase tracking-wider">Veg</span>
+          </div>
+          <h3 class="text-cream font-bold text-base leading-tight mb-1">Frosty Choco</h3>
+          <p class="text-cream/40 text-xs leading-relaxed mb-4">Fresh-squeezed lemon, black salt, roasted cumin, chaat masala & sparkling water. The perfect wrap companion.</p>
+          <div class="flex items-center justify-between">
+            <span class="text-brand font-black text-xl">₹120</span>
+            <button class="add-btn w-auto px-4" onclick="addToCart(this)" data-name="Frosty Choco" data-price="120">+ Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /menu-grid -->
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     ABOUT SECTION
+════════════════════════════════════════════════ -->
+<section id="about" class="py-20 lg:py-28 relative overflow-hidden">
+  <div class="gradient-divider mb-20"></div>
+
+  <!-- Decorative BG text -->
+  <div class="absolute -right-8 top-1/2 -translate-y-1/2 text-[20rem] font-['Bebas_Neue'] text-white/[0.02] select-none pointer-events-none leading-none hidden lg:block">WRAP</div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Image stack -->
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden border border-white/10" style="aspect-ratio:3/4;">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop&q=80"
+               alt="Wrapstick kitchen — fresh street food preparation Kanodar"
+               class="w-full h-full object-cover"
+               loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
+        <!-- Floating info card -->
+        <div class="absolute -bottom-6 -right-4 lg:-right-12 bg-ink-2 border border-brand/25 rounded-xl p-5 shadow-2xl max-w-[200px]">
+          <p class="text-brand text-3xl font-['Bebas_Neue'] tracking-wide">2024</p>
+          <p class="text-cream/50 text-xs mt-0.5">Est. Kanodar, Gujarat</p>
+          <div class="mt-3 flex gap-1">
+            <span class="text-gold text-sm">★★★★★</span>
+          </div>
+          <p class="text-cream/30 text-xs mt-0.5">Loved by locals</p>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div>
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title text-[clamp(2.5rem,5vw,4rem)] text-cream mb-6">
+          STREET FOOD.<br>
+          <span style="font-family:'DM Serif Display',serif;font-style:italic;color:#D4A843;">Elevated.</span>
+        </h2>
+        <div class="space-y-4 text-cream/55 text-[0.9375rem] leading-relaxed">
+          <p>Wrapstick was born from a simple obsession: making street food that you're proud to eat. We believed Kanodar deserved wraps with real flavor — not the soggy, sad kind, but bold, layered, perfectly seasoned rolls that hit different every time.</p>
+          <p>Every ingredient is sourced fresh. Every sauce is crafted in-house. Every wrap is assembled to order. We're not a fast food chain — we're your neighborhood gourmet wrap spot with street-food soul and fine-dining attention to detail.</p>
+        </div>
+
+        <!-- Hours -->
+        <div class="mt-8 space-y-3">
+          <h3 class="text-cream font-bold text-sm uppercase tracking-widest mb-4">Operating Hours</h3>
+          <div class="hours-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <p class="text-cream font-semibold text-sm">12:30 PM – 11:30 PM</p>
+              <p class="text-cream/40 text-xs">Open Every Day · Monday to Sunday</p>
+            </div>
+            <span class="ml-auto text-xs bg-green-500/20 text-green-400 font-bold px-2 py-0.5 rounded uppercase tracking-wider" id="open-status">Checking...</span>
+          </div>
+          <div class="hours-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.38 2 2 0 0 1 3.55 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <p class="text-cream font-semibold text-sm">+91 84604 80045</p>
+              <p class="text-cream/40 text-xs">Call or WhatsApp to Order</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#menu" class="btn-primary mt-8 inline-flex">
+          View Full Menu
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <div class="gradient-divider mt-20"></div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     CONTACT / FOOTER
+════════════════════════════════════════════════ -->
+<section id="contact" class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14">
+      <p class="section-label">Find Us</p>
+      <h2 class="section-title text-[clamp(2.5rem,6vw,4.5rem)] text-cream">COME FIND US</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+
+      <!-- Col 1: Info -->
+      <div>
+        <div class="flex items-center gap-2 mb-6">
+          <span class="text-brand">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="14" cy="14" rx="13" ry="7" stroke="#FF4B1F" stroke-width="2" fill="none"/>
+              <path d="M4 14 Q14 8 24 14" stroke="#D4A843" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M4 14 Q14 20 24 14" stroke="#FF4B1F" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="logo-text text-cream text-xl tracking-widest">WRAPSTICK</span>
+        </div>
+        <p class="text-cream/40 text-sm leading-relaxed mb-6">Gourmet wraps and street eats served fresh, every day. Born in Kanodar, made for everyone who loves bold flavor.</p>
+        <div class="space-y-3 text-sm">
+          <div class="flex gap-3 text-cream/50">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round" class="flex-shrink-0 mt-0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Al Qama Hotel, Hussain Tekri Rd,<br>Tharadra Nagar, Kanodar, Gujarat 385520
+          </div>
+          <div class="flex gap-3 text-cream/50 items-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.38 2 2 0 0 1 3.55 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+918460480045" class="hover:text-brand transition-colors">+91 84604 80045</a>
+          </div>
+          <div class="flex gap-3 text-cream/50 items-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF4B1F" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            12:30 PM – 11:30 PM, Every Day
+          </div>
+        </div>
+        <!-- Social icons -->
+        <div class="flex gap-2 mt-6">
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/918460480045" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div>
+        <h3 class="text-cream font-bold text-sm uppercase tracking-widest mb-6">Quick Links</h3>
+        <ul class="space-y-3">
+          <li><a href="#hero"     class="footer-link flex items-center gap-2"><span class="text-brand text-xs">→</span> Home</a></li>
+          <li><a href="#menu"     class="footer-link flex items-center gap-2"><span class="text-brand text-xs">→</span> Our Menu</a></li>
+          <li><a href="#about"    class="footer-link flex items-center gap-2"><span class="text-brand text-xs">→</span> About Wrapstick</a></li>
+          <li><a href="#contact"  class="footer-link flex items-center gap-2"><span class="text-brand text-xs">→</span> Find Us</a></li>
+          <li><a href="tel:+918460480045" class="footer-link flex items-center gap-2"><span class="text-brand text-xs">→</span> Call to Order</a></li>
+          <li><a href="https://wa.me/918460480045" target="_blank" rel="noopener" class="footer-link flex items-center gap-2"><span class="text-brand text-xs">→</span> WhatsApp Order</a></li>
+        </ul>
+        <div class="mt-8 bg-ink-3 rounded-lg p-4 border border-white/06">
+          <p class="text-gold text-xs font-bold uppercase tracking-wider mb-2">Current Status</p>
+          <p class="text-cream font-semibold text-sm" id="footer-status">Checking hours...</p>
+          <p class="text-cream/30 text-xs mt-1">12:30 PM – 11:30 PM daily</p>
+        </div>
+      </div>
+
+      <!-- Col 3: Map -->
+      <div>
+        <h3 class="text-cream font-bold text-sm uppercase tracking-widest mb-6">Location</h3>
+        <div class="map-wrap mb-4" style="height:220px;">
+          <iframe
+            title="Wrapstick location map — Kanodar Gujarat"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.5239456120!2d72.41240!3d24.02470!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAxJzI5LjAiTiA3MsKwMjQnNDIuNiJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%" height="220" style="border:0;filter:grayscale(0.4) invert(0.1);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <a href="https://maps.google.com/?q=Al+Qama+Hotel+Hussain+Tekri+Rd+Kanodar+Gujarat+385520" target="_blank" rel="noopener" class="btn-primary w-full justify-center text-xs py-2.5">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Get Directions on Google Maps
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom footer bar -->
+    <div class="gradient-divider"></div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 text-cream/25 text-xs">
+      <p>© 2024 Wrapstick. All rights reserved. Kanodar, Gujarat, India.</p>
+      <p>Made with ❤️ for good food &amp; bold flavors.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════
+     CART OVERLAY & DRAWER
+════════════════════════════════════════════════ -->
+<div id="cart-overlay" onclick="toggleCart()"></div>
+
+<aside id="cart-drawer" aria-label="Shopping cart" role="complementary">
+
+  <!-- Header -->
+  <div class="flex items-center justify-between px-5 py-4 border-b border-white/08">
+    <div>
+      <h2 class="text-cream font-bold text-base">Your Order</h2>
+      <p class="text-cream/40 text-xs mt-0.5">Al Qama Hotel, Kanodar</p>
+    </div>
+    <button onclick="toggleCart()" class="text-cream/40 hover:text-brand transition-colors" aria-label="Close cart">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+
+  <!-- Cart Items -->
+  <div id="cart-items-list" class="flex-1 overflow-y-auto px-5 py-2">
+    <div id="cart-empty" class="flex flex-col items-center justify-center h-48 gap-4">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(245,240,232,0.15)" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <p class="text-cream/30 text-sm">Your cart is empty</p>
+      <button onclick="toggleCart()" class="text-brand text-xs font-bold uppercase tracking-widest hover:underline">Browse Menu →</button>
+    </div>
+  </div>
+
+  <!-- Footer: subtotal + checkout -->
+  <div id="cart-footer" class="hidden border-t border-white/08 px-5 pt-4 pb-6 space-y-3">
+    <div class="flex justify-between text-cream/50 text-xs uppercase tracking-widest">
+      <span>Subtotal</span>
+      <span id="cart-subtotal" class="text-cream font-bold text-sm">₹0</span>
+    </div>
+    <div class="flex justify-between text-cream/30 text-xs">
+      <span>Delivery / Packaging</span>
+      <span>As applicable</span>
+    </div>
+    <div class="gradient-divider"></div>
+    <div class="flex justify-between text-cream font-bold text-sm mb-2">
+      <span>Order Total</span>
+      <span id="cart-total" class="text-brand text-lg">₹0</span>
+    </div>
+    <button onclick="checkoutWhatsApp()" class="wa-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+      Order on WhatsApp
+    </button>
+    <a href="tel:+918460480045" class="btn-outline text-sm w-full justify-center">Call: +91 84604 80045</a>
+  </div>
+
+</aside>
+
+<!-- ════════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════ -->
+<script>
+/* ── STATE ── */
+let cart = {}; // { itemName: { name, price, qty } }
+
+/* ── NAVBAR SCROLL ── */
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* ── MOBILE MENU ── */
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('open');
+  document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+
+/* ── CART DRAWER ── */
+function toggleCart() {
+  const drawer = document.getElementById('cart-drawer');
+  const overlay = document.getElementById('cart-overlay');
+  const isOpen = drawer.classList.toggle('open');
+  overlay.classList.toggle('open', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+
+/* ── ADD TO CART ── */
+function addToCart(btn) {
+  const name  = btn.dataset.name;
+  const price = parseInt(btn.dataset.price, 10);
+
+  if (cart[name]) {
+    cart[name].qty++;
+  } else {
+    cart[name] = { name, price, qty: 1 };
+  }
+
+  renderCart();
+  animateBadge();
+
+  // Visual feedback on button
+  const original = btn.textContent;
+  btn.textContent = '✓ Added!';
+  btn.style.background = '#22c55e';
+  setTimeout(() => {
+    btn.textContent = original;
+    btn.style.background = '';
+  }, 900);
+}
+
+/* ── RENDER CART ── */
+function renderCart() {
+  const list    = document.getElementById('cart-items-list');
+  const empty   = document.getElementById('cart-empty');
+  const footer  = document.getElementById('cart-footer');
+  const items   = Object.values(cart);
+  const total   = items.reduce((s, i) => s + i.price * i.qty, 0);
+  const count   = items.reduce((s, i) => s + i.qty, 0);
+
+  // Update badges
+  const badge    = document.getElementById('cart-count');
+  const badgeMob = document.getElementById('cart-count-mob');
+  badge.textContent = count;
+  badgeMob.textContent = count;
+  if (count > 0) {
+    badge.classList.add('has-items');
+    badgeMob.classList.remove('hidden');
+    badgeMob.classList.add('flex');
+  } else {
+    badge.classList.remove('has-items');
+    badgeMob.classList.add('hidden');
+  }
+
+  // Show/hide empty state
+  if (items.length === 0) {
+    empty.style.display = 'flex';
+    footer.classList.add('hidden');
+  } else {
+    empty.style.display = 'none';
+    footer.classList.remove('hidden');
+  }
+
+  // Build item rows
+  const existingRows = list.querySelectorAll('.cart-item-row');
+  existingRows.forEach(r => r.remove());
+
+  items.forEach(item => {
+    const row = document.createElement('div');
+    row.className = 'cart-item-row';
+    row.innerHTML = `
+      <div class="flex-1 min-w-0">
+        <p class="text-cream text-sm font-semibold leading-tight truncate">${item.name}</p>
+        <p class="text-brand text-xs font-bold mt-0.5">₹${item.price} each</p>
+      </div>
+      <div class="flex items-center gap-2 flex-shrink-0">
+        <button class="qty-btn" onclick="changeQty('${item.name}', -1)">−</button>
+        <span class="text-cream font-bold text-sm w-5 text-center">${item.qty}</span>
+        <button class="qty-btn" onclick="changeQty('${item.name}', 1)">+</button>
+      </div>
+      <p class="text-cream font-bold text-sm w-14 text-right flex-shrink-0">₹${item.price * item.qty}</p>
+      <button class="remove-btn" onclick="removeItem('${item.name}')" aria-label="Remove ${item.name}">✕</button>
+    `;
+    list.appendChild(row);
+  });
+
+  document.getElementById('cart-subtotal').textContent = `₹${total}`;
+  document.getElementById('cart-total').textContent = `₹${total}`;
+}
+
+/* ── CHANGE QTY ── */
+function changeQty(name, delta) {
+  if (!cart[name]) return;
+  cart[name].qty += delta;
+  if (cart[name].qty <= 0) delete cart[name];
+  renderCart();
+}
+
+/* ── REMOVE ITEM ── */
+function removeItem(name) {
+  delete cart[name];
+  renderCart();
+}
+
+/* ── BADGE ANIMATION ── */
+function animateBadge() {
+  const badge = document.getElementById('cart-count');
+  badge.style.transform = 'scale(1.5)';
+  setTimeout(() => { badge.style.transform = 'scale(1)'; badge.style.transition = 'transform 0.2s'; }, 200);
+}
+
+/* ── WHATSAPP CHECKOUT ── */
+function checkoutWhatsApp() {
+  const items = Object.values(cart);
+  if (items.length === 0) return;
+  const total = items.reduce((s, i) => s + i.price * i.qty, 0);
+  let msg = `🌯 *New Order from Wrapstick Website*\n\n`;
+  items.forEach(i => {
+    msg += `• ${i.name} × ${i.qty} = ₹${i.price * i.qty}\n`;
+  });
+  msg += `\n💰 *Total: ₹${total}*\n\nPlease confirm my order. Thank you! 🙏`;
+  const url = `https://wa.me/918460480045?text=${encodeURIComponent(msg)}`;
+  window.open(url, '_blank', 'noopener');
+}
+
+/* ── MENU FILTER TABS ── */
+document.getElementById('filter-tabs').addEventListener('click', (e) => {
+  const btn = e.target.closest('.tab-btn');
+  if (!btn) return;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const filter = btn.dataset.filter;
+  document.querySelectorAll('#menu-grid .menu-card').forEach(card => {
+    const match = filter === 'all' || card.dataset.category === filter;
+    card.classList.toggle('hidden', !match);
+  });
+});
+
+/* ── OPEN STATUS ── */
+function updateOpenStatus() {
+  const now = new Date();
+  // IST offset: UTC+5:30
+  const ist = new Date(now.getTime() + (5.5 * 60 * 60 * 1000));
+  const h   = ist.getUTCHours();
+  const m   = ist.getUTCMinutes();
+  const mins = h * 60 + m;
+  const openMins  = 12 * 60 + 30;  // 12:30
+  const closeMins = 23 * 60 + 30;  // 23:30
+  const isOpen = mins >= openMins && mins < closeMins;
+
+  const el = document.getElementById('open-status');
+  const fe = document.getElementById('footer-status');
+  if (el) {
+    el.textContent  = isOpen ? 'Open Now' : 'Closed';
+    el.className = el.className.replace(/bg-\w+-\d+\/\d+ text-\w+-\d+/, '');
+    el.style.background = isOpen ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)';
+    el.style.color = isOpen ? '#4ade80' : '#f87171';
+  }
+  if (fe) fe.textContent = isOpen ? '🟢 We\'re Open — Order now!' : '🔴 Currently Closed · Opens at 12:30 PM';
+}
+updateOpenStatus();
+
+/* ── KEYBOARD ESC to close ── */
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const drawer = document.getElementById('cart-drawer');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (drawer.classList.contains('open')) toggleCart();
+    if (mobileMenu.classList.contains('open')) toggleMobileMenu();
+  }
+});
+</script>
+
+</body>
+</html>
